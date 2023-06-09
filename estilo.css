@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    color: #000000;
+    text-decoration: none;
+}
+.navbar{
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 34px;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.nav-link-btn{
+    background-color: rgb(255, 109, 56);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 13px;
+}
+
+.nav-link{
+    transition: 0.3s ease;
+}
+.nav-link:hover{
+    color: orangered;
+}
+.btn-respon{
+    display: none;
+    cursor: pointer;
+}
+.barra{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: orange;
+    transition: all 0.1s ease-in-out;
+}
+@media (max-width:636px){
+   
+.navbar{
+    flex-wrap: wrap;
+}
+.logo{
+    margin-left: 40px;
+    width: auto;
+    height: auto;
+}
+.btn-respon{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+@media (max-width:1024px){
+    .btn-respon{
+        display: block;
+    }
+    .btn-respon.active .barra:nth-child(2){
+        opacity: 0;
+    }
+    .btn-respon.active .barra:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .btn-respon.active .barra:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 140px;
+        gap: 0;
+        border-radius: 0 0 20px 20px;
+        background-color:rgb(255, 143, 50);
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.3s;
+    }
+    .nav-link-btn{
+        padding: 20px 160px;
+        background-color: white;
+        border-radius: 0 0 20px 20px;
+        color: black;
+    }
+    .nav-link{
+        color: #fff;
+    }
+    .nav-item{
+        margin:  16px 10px;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+}
+
+.dropdown-menu{
+    position: absolute;
+    box-shadow: 0 0 2px black;
+    display: none;
+}
+.dropdown-menu a{
+    display: block;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 2px rgb(255, 255, 255);
+    padding: 20px;
+    background-color: rgb(255, 104, 49);
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+.dropright-menu{
+    position: relative;
+    display: none;
+}
+.dropright-menu a{
+    display: block;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 2px rgb(0, 0, 0);
+    padding: 20px;
+    background-color: rgb(255, 104, 49);
+}
+.mod{
+    display: none;
+}
+ .mudar{
+    display: block;
+}
+

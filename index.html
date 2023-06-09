@@ -7,155 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />                       
     <link rel="stylesheet" href="estilo.css">
     <title>Net Solutions</title>
-<style>
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-li{
-    list-style: none;
-}
-a{
-    color: #000000;
-    text-decoration: none;
-}
-.navbar{
-    min-height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 34px;
-}
-.nav-menu{
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-.nav-link-btn{
-    background-color: rgb(255, 109, 56);
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    padding: 13px;
-}
-.nav-link-btn:hover{
-    background-color: orangered;
-}
 
-.nav-link{
-    transition: 0.3s ease;
-}
-.nav-link:hover{
-    color: orangered;
-}
-.btn-respon{
-    display: none;
-    cursor: pointer;
-}
-.barra{
-    display: block;
-    width: 28px;
-    height: 3px;
-    border-radius: 2px;
-    margin: 5px auto;
-    background-color: orange;
-    transition: all 0.1s ease-in-out;
-}
-@media (max-width:636px){
-   
-.navbar{
-    flex-wrap: wrap;
-}
-.logo{
-    margin-left: 40px;
-    width: auto;
-    height: auto;
-}
-.btn-respon{
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-}
-}
-@media (max-width:1024px){
-    .btn-respon{
-        display: block;
-    }
-    .btn-respon.active .barra:nth-child(2){
-        opacity: 0;
-    }
-    .btn-respon.active .barra:nth-child(1){
-        transform: translateY(8px) rotate(45deg);
-    }
-    .btn-respon.active .barra:nth-child(3){
-        transform: translateY(-8px) rotate(-45deg);
-    }
-    .nav-menu{
-        position: fixed;
-        left: -100%;
-        top: 140px;
-        gap: 0;
-        border-radius: 0 0 20px 20px;
-        background-color:rgb(255, 143, 50);
-        text-align: center;
-        flex-direction: column;
-        width: 100%;
-        transition: 0.3s;
-    }
-    .nav-link-btn{
-       padding: 10px 160px;
-        background-color: white;
-        color: black;
-    }
-    .nav-link{
-        color: #fff;
-    }
-    .nav-item{
-        margin:  16px 10px;
-    }
-    .nav-menu.active{
-        left: 0;
-    }
-}
-
-.dropdown-menu{
-    position: absolute;
-    box-shadow: 0 0 2px black;
-    margin-left: -50px;
-    display: none;
-}
-.dropdown-menu a{
-    display: block;
-    color: rgb(255, 255, 255);
-    box-shadow: 0 0 2px rgb(255, 212, 132);
-    padding: 10px;
-    background-color: rgb(255, 104, 49);
-}
-.dropdown:hover .dropdown-menu{
-    display: block;
-}
-
-.dropright-menu{
-    position: relative;
-    display: none;
-}
-.dropright-menu a{
-    display: block;
-    color: rgb(255, 255, 255);
-    box-shadow: 0 0 2px rgb(255, 212, 132);
-    padding: 10px;
-    background-color: rgb(255, 104, 49);
-}
-.dropright:hover .dropright-menu{
-    display: block;
-}
-
-
-
-
-</style>
 </head>
 <body>
     
@@ -164,19 +16,22 @@ a{
             <nav class="navbar">
                   <img src="img/logo.png" class="logo">
                     <ul class="nav-menu">
-                        <li class="nav-item"> <a class="nav-link-btn" href="#">Início</a></li>
+                        <li class="nav-item" > <a class="nav-link-btn" href="#">Início</a></li>
                         <li class="nav-item"> <a class="nav-link" href="#"> Nossa Loja</a></li>
-                        <ul>
+
+                    <ul>
                         <li class="nav-item dropdown"> 
-                            <a class="nav-link" href="#" id="serv">Serviços <i class="fa-solid fa-caret-down"></i></a>
-                        <div class="dropdown-menu">
+                            <a class="nav-link" href="#" id="serv">Serviços <i class="fa-solid fa-caret-down "></i></a>
+                        <div class="dropdown-menu ">
                             <a href="#">Assistência Técnica</a>
                             <ul>
                                 <li class=" dropright">
-                                    <a href="#">Sistemas <i class="fa-solid fa-caret-down"></i></a>
-                                    <div class="dropright-menu">
-                                        <a href="#">Terceirização/outsourc   <br> ing de TI</a>
-                                        <a href="#">Certificado Digital</a>
+                                    <a href="#">Sistemas <i class="fa-solid fa-caret-down mud"></i></a>
+                                    <div class="dropright-menu mod">
+                                        <a href="#">SAC – Sistema de <br> Automação Comercial</a>
+                                        <a href="#">SAW – Sistema de auto <br> atendimento para  Whatsapp</a>
+                                        <a href="#">Sistemas Personalizados</a>
+                                        
                                     </div>
                                 </li>
                             </ul>
@@ -184,11 +39,36 @@ a{
                             <a href="#">Desenvolvimento de Sites</a>
                             <a href="#">Terceirização/outsourc   <br> ing de TI</a>
                             <a href="#">Certificado Digital</a>
-                        </div></li>
+                        </div>
+                        </li>
                     </ul>
                     
-                        <li class="nav-item"> <a class="nav-link" href="#"> Suporte Técnico   </a></li>
-                        <li class="nav-item"> <a class="nav-link" href="#"> A Net Solutions   </a></li>
+                    <ul>
+                        <li class="nav-item dropdown"> 
+                            <a class="nav-link" href="#" id="serv">Suporte Técnico <i class="fa-solid fa-caret-down "></i></a>
+                        <div class="dropdown-menu ">
+                            <a href="#">Team Viewer</a>
+                            <a href="#">Atendimento Online</a>
+                            <a href="#">Downloads</a>
+                            <a href="#">Vídeos Sobre o SAC</a>
+
+                        </div>
+                        </li>
+                    </ul>
+                        
+                    <ul>
+                        <li class="nav-item dropdown"> 
+                            <a class="nav-link" href="#" id="serv">A Net Solutions <i class="fa-solid fa-caret-down "></i></a>
+                        <div class="dropdown-menu ">
+                            <a href="#">Sobre a empresa</a>
+                            <a href="#">Seja um parceiro</a>
+                            <a href="#">Notícias</a>
+                            <a href="#">Portifólio</a>
+                            <a href="#">Contato</a>
+                            <a href="#">Política de privacidade</a>
+                        </div>
+                        </li>
+                    </ul>
                         <li class="nav-item"> <a class="nav-link" href="#"> Área do cliente   </a></li>
                     </ul>
                     <div class="btn-respon">
@@ -202,3 +82,4 @@ a{
     <script src="script.js"></script>
     </body>
 </html>
+
