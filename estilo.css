@@ -65,6 +65,7 @@ a{
     margin-left: auto;
     margin-right: auto;
 }
+
 }
 @media (max-width:1024px){
     .btn-respon{
@@ -138,7 +139,40 @@ a{
 .mod{
     display: none;
 }
- .mudar{
+.mudar{
     display: block;
 }
+.faixa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f35f03;
+    gap: 300px;
+    height: 150px;
+    color: #fff;
+}
+.icon{
+    font-size: 60px;
+    align-self:center;
+    margin-right:20px    
+}
 
+.box {
+    border:1px solid #000000;
+}
+
+.box input {
+    display:inline-flex;
+    outline:0;
+    border:0;
+    padding: 5px;
+    width: 230px;
+}
+
+.box .button {
+    background: #2c2928;
+    color: #fff;
+    border:none;
+    margin-left: -10px;
+    padding: 5px 16px;
+}

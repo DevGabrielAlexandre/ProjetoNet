@@ -1,5 +1,6 @@
 const btnRespon = document.querySelector(".btn-respon");
 const navMenu   = document.querySelector(".nav-menu");
+const carrosel = document.querySelector(".carousel");
 
 btnRespon.addEventListener("click", () => {
     btnRespon.classList.toggle('active');
